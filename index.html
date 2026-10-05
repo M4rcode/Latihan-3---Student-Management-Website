@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=1200">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo_header">
+                <a href="#">
+                    <img src="images/logo.png" style="height: 100px; width: 100px;">
+                </a>
+                <div>
+                    <h2 style="color: white; font-size: 30px; text-align: center; margin: 0 0 15px 0;">CogWork</h2>
+                    <hr style="border: 0; border-top: 1px solid white; margin: 0;">
+                    <p style="color: white; text-align: center; margin: 15px 0 0 0; font-size: 15px;">Student Management System</p>
+                </div>
+            </div>
+            <div class="button_header">
+                <a href="#" class="button">Home</a>
+                <a href="#" class="button">Database</a>
+                <a href="#" class="button">About</a>
+                <a href="#" class="profile"><img src="images/pfp.png"></a>
+            </div>
+        </div>
+
+        <div class="sides">
+            <form class="form">
+                <h1 style="font-size: 25px;">Form Student</h1>
+                <div class="field">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: 5025251000" required>
+                </div><br>
+                <div class="field">
+                    <label for="fname">Nama Lengkap</label>
+                    <input type="text" id="fname" name="fname" placeholder="Contoh: John Doe" required>
+                </div><br>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Contoh: johndoe@gmail.com">
+                </div><br>
+
+                <div class="field">
+                    <label for="jurusan">Jurusan</label>
+                    <select id="jurusan" name="jurusan">
+                        <option selected disabled>Pilih jurusan</option>
+                        <option>Teknik Informatika</option>
+                        <option>Teknik Elektro</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Biomedik</option>
+                        <option>Teknologi Informasi</option>
+                        <option>Teknik Komputer</option>
+                    </select>
+                </div><br>
+
+                <div class="submit_button">
+                    <button>Simpan</button>
+                    <button>Batal</button>
+                    <button>Reset</button>
+                </div>
+            </form>
+            <div class="database">
+                <div class="database-header">
+                    <h1 style="font-size: 25px;">Data Mahasiswa</h1>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search student...">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Jurusan</th>
+                            <th>Email</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>231001</td>
+                            <td>Andi Pratama</td>
+                            <td>Informatika</td>
+                            <td>andi@mail.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>231002</td>
+                            <td>Siti Aisyah</td>
+                            <td>Sistem Informasi</td>
+                            <td>siti@mail.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>231003</td>
+                            <td>Budi Santoso</td>
+                            <td>Teknik Komputer</td>
+                            <td>budi@mail.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>231004</td>
+                            <td>Nina Marlina</td>
+                            <td>Teknologi Informasi</td>
+                            <td>nina@mail.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>231005</td>
+                            <td>Rizky Pratama</td>
+                            <td>Informatika</td>
+                            <td>rizky@mail.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <button>&laquo;</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>&rsaquo;</button>
+                    <button>&raquo;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
