@@ -20,7 +20,7 @@
             </div>
             <div class="button_header">
                 <a href="#" class="button">Home</a>
-                <a href="#" class="button">Database</a>
+                <a href="#" class="button" style="text-decoration: underline;">Database</a>
                 <a href="#" class="button">About</a>
                 <a href="#" class="profile"><img src="images/pfp.png"></a>
             </div>
@@ -29,6 +29,7 @@
         <div class="sides">
             <form class="form">
                 <h1 style="font-size: 25px;">Form Student</h1>
+                <hr style="width: 100%; margin-bottom: 25px;">
                 <div class="field">
                     <label for="nim">NIM</label>
                     <input type="text" id="nim" name="nim" placeholder="Contoh: 5025251000" required>
@@ -56,23 +57,24 @@
                     </select>
                 </div><br>
 
-                <div class="submit_button">
-                    <button>Simpan</button>
-                    <button>Batal</button>
-                    <button>Reset</button>
+                <div class="submit_button" style="margin-top: 30px;">
+                    <button style="background-color: #5CCCFC;"><img src="images/save.png">Simpan</button>
+                    <button style="background-color: #D04343;"><img src="images/cancel.png">Batal</button>
+                    <button style="background-color: #9DEB62;"><img src="images/restart.png">Reset</button>
                 </div>
             </form>
             <div class="database">
                 <div class="database-header">
                     <h1 style="font-size: 25px;">Data Mahasiswa</h1>
 
-                    <div class="search-box">
-                        <input type="text" placeholder="Search student...">
+                    <div>
+                        <input type="text" placeholder="Search student..." class="search_box">
                     </div>
                 </div>
-                <table>
+                <hr style="width: 100%;">
+                <table class="table">
                     <thead>
-                        <tr>
+                        <tr style="background-color: #42B9FD;">
                             <th>No</th>
                             <th>NIM</th>
                             <th>Nama</th>
@@ -83,64 +85,94 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td style="background-color: #FAFAFA;">1</td>
                             <td>231001</td>
                             <td>Andi Pratama</td>
                             <td>Informatika</td>
                             <td>andi@mail.com</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
+                                <div class="submit_button">
+                                    <button style="background-color: #5CCCFC;">
+                                        <img src="images/edit.png"> 
+                                    </button>
+                                    <button style="background-color: #D04343;">
+                                        <img src="images/trash.png"> 
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
+                            <td style="background-color: #FAFAFA;">2</td>
                             <td>231002</td>
                             <td>Siti Aisyah</td>
                             <td>Sistem Informasi</td>
                             <td>siti@mail.com</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
+                                <div class="submit_button">
+                                    <button style="background-color: #5CCCFC;">
+                                        <img src="images/edit.png"> 
+                                    </button>
+                                    <button style="background-color: #D04343;">
+                                        <img src="images/trash.png"> 
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td style="background-color: #FAFAFA;">3</td>
                             <td>231003</td>
                             <td>Budi Santoso</td>
                             <td>Teknik Komputer</td>
                             <td>budi@mail.com</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
+                                <div class="submit_button">
+                                    <button style="background-color: #5CCCFC;">
+                                        <img src="images/edit.png"> 
+                                    </button>
+                                    <button style="background-color: #D04343;">
+                                        <img src="images/trash.png"> 
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>4</td>
+                            <td style="background-color: #FAFAFA;">4</td>
                             <td>231004</td>
                             <td>Nina Marlina</td>
                             <td>Teknologi Informasi</td>
                             <td>nina@mail.com</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
+                                <div class="submit_button">
+                                    <button style="background-color: #5CCCFC;">
+                                        <img src="images/edit.png"> 
+                                    </button>
+                                    <button style="background-color: #D04343;">
+                                        <img src="images/trash.png"> 
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td style="background-color: #FAFAFA;">5</td>
                             <td>231005</td>
                             <td>Rizky Pratama</td>
                             <td>Informatika</td>
                             <td>rizky@mail.com</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
+                                <div class="submit_button">
+                                    <button style="background-color: #5CCCFC;">
+                                        <img src="images/edit.png"> 
+                                    </button>
+                                    <button style="background-color: #D04343;">
+                                        <img src="images/trash.png"> 
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-
-                <div>
+                <br>
+                <div class="pagination">
                     <button>&laquo;</button>
                     <button>1</button>
                     <button>2</button>
@@ -151,5 +183,6 @@
             </div>
         </div>
     </div>
+    <br style="margin-bottom: 50px;">
 </body>
 </html>
