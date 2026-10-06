@@ -213,3 +213,56 @@ search_box:hover {
     color: white;
     background: var(--primary);
 }
+
+@media (max-width: 1100px) {
+    /* Mengubah form dan database menjadi atas-bawah, bukan kiri-kanan */
+    .sides {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    /* Menyesuaikan lebar database agar tidak menembus layar */
+    .database {
+        width: 100%;
+        max-width: 700px; 
+        height: auto;
+        padding: 30px 20px; /* Mengurangi padding 100px yang terlalu lebar untuk layar kecil */
+    }
+
+    /* Menyesuaikan lebar form agar sejajar dengan database */
+    .form {
+        width: 100%;
+        max-width: 700px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo_header {
+        margin: 0;
+    }
+
+    .button_header {
+        margin: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .database-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
