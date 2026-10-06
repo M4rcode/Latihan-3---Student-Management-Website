@@ -7,14 +7,14 @@ body {
 .container{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 75px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     min-width:100px;
     background-color: #0B2746;
     background-image: url(../images/texture.avif);
@@ -195,10 +195,21 @@ search_box:hover {
     text-align: center;
 }
 
-.pagination{
+.pagination {
     display: flex;
-    flex-direction: row;
-    gap: 8px;
     justify-content: center;
-    align-items: center;
+    margin-top: 25px;
+}
+
+.pagination button {
+    min-width: 43px;
+    height: 42px;
+    border: 1px solid var(--border);
+    background: white;
+    cursor: pointer;
+}
+
+.pagination .active {
+    color: white;
+    background: var(--primary);
 }
